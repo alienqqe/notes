@@ -82,7 +82,7 @@ def get_id(file, username):
             if row["username"] == username:
                 return row["id"]
 
-    return False
+    return ""
 
 def get_hash(file, username):
     with open(file, "r") as f:
@@ -91,7 +91,7 @@ def get_hash(file, username):
             if row["username"] == username:
                 return row["hash"]
 
-    return False
+    return ""
 
 def get_username(file, id):
     with open(file, "r") as f:
